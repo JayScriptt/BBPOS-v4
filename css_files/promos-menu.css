@@ -1,0 +1,31 @@
+#promos-1{
+    background-image: url(/images/special_drinks/special-drinks-menu-1.png);
+}#promos-2{
+    background-image: url(/images/special_drinks/special-drinks-menu-2.png);
+}#promos-3{
+    background-image: url(/images/special_drinks/special-drinks-menu-3.png);
+}#promos-4{
+    background-image: url(/images/special_drinks/special-drinks-menu-4.png);
+}#promos-5{
+    background-image: url(/images/special_drinks/special-drinks-menu-5.png);
+}#promos-6{
+    background-image: url(/images/special_drinks/special-drinks-menu-6.png);
+}#promos-7{
+    background-image: url(/images/special_drinks/special-drinks-menu-7.png);
+}
+/* MENU ITEM ANIMATION */
+.menu-choices:nth-child(1) {
+    animation-delay: 0.10s;
+}.menu-choices:nth-child(2) {
+    animation-delay: 0.15s;
+}.menu-choices:nth-child(3) {
+    animation-delay: 0.20s;
+}.menu-choices:nth-child(4) {
+    animation-delay: 0.25s;
+}.menu-choices:nth-child(5) {
+    animation-delay: .30s;
+}.menu-choices:nth-child(6) {
+    animation-delay: .35s;
+}.menu-choices:nth-child(7) {
+    animation-delay: .40s;
+}

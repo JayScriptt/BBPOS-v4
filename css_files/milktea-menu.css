@@ -1,0 +1,51 @@
+#mt1{
+    background-image: url(/images/milktea_menu/milktea-menu-1.jpg);
+}#mt2{
+    background-image: url(/images/milktea_menu/milktea-menu-2.jpg);
+}#mt3{
+    background-image: url(/images/milktea_menu/milktea-menu-3.jpg);
+}#mt4{
+    background-image: url(/images/milktea_menu/milktea-menu-4.jpg);
+}#mt5{
+    background-image: url(/images/milktea_menu/milktea-menu-5.jpg);
+}#mt6{
+    background-image: url(/images/milktea_menu/milktea-menu-6.jpg);
+}#mt7{
+    background-image: url(/images/milktea_menu/milktea-menu-7.jpg);
+}#mt8{
+    background-image: url(/images/milktea_menu/milktea-menu-8.jpg);
+}#mt9{
+    background-image: url(/images/milktea_menu/milktea-menu-9.jpg);
+}#mt10{
+    background-image: url(/images/milktea_menu/milktea-menu-10.jpg);
+}#mt11{
+    background-image: url(/images/milktea_menu/milktea-menu-11.jpg);
+}#mt12{
+    background-image: url(/images/milktea_menu/milktea-menu-12.jpg);
+}
+/* MENU ITEM ANIMATION */
+.menu-choices:nth-child(1) {
+    animation-delay: 0.10s;
+}.menu-choices:nth-child(2) {
+    animation-delay: 0.15s;
+}.menu-choices:nth-child(3) {
+    animation-delay: 0.20s;
+}.menu-choices:nth-child(4) {
+    animation-delay: 0.25s;
+}.menu-choices:nth-child(5) {
+    animation-delay: .30s;
+}.menu-choices:nth-child(6) {
+    animation-delay: .35s;
+}.menu-choices:nth-child(7) {
+    animation-delay: .40s;
+}.menu-choices:nth-child(8) {
+    animation-delay: .45s;
+}.menu-choices:nth-child(9) {
+    animation-delay: .50s;
+}.menu-choices:nth-child(10) {
+    animation-delay: .55s;
+}.menu-choices:nth-child(11) {
+    animation-delay: .60s;
+}.menu-choices:nth-child(12) {
+    animation-delay: .65s;
+}

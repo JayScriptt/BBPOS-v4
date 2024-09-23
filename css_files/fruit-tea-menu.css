@@ -1,0 +1,28 @@
+#fruit-tea-1{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-1.png);
+}#fruit-tea-2{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-2.png);
+}#fruit-tea-3{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-3.png);
+}#fruit-tea-4{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-4.png);
+}#fruit-tea-5{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-5.png);
+}#fruit-tea-6{
+    background-image: url(/images/fruit_tea_menu/fruit-tea-6.png);
+}
+
+ /* MENU ITEM ANIMATION */ 
+.menu-choices:nth-child(1) {
+    animation-delay: 0.10s;
+}.menu-choices:nth-child(2) {
+    animation-delay: 0.15s;
+}.menu-choices:nth-child(3) {
+    animation-delay: 0.20s;
+}.menu-choices:nth-child(4) {
+    animation-delay: 0.25s;
+}.menu-choices:nth-child(5) {
+    animation-delay: .30s;
+}.menu-choices:nth-child(6) {
+    animation-delay: .35s;
+}

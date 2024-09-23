@@ -1,0 +1,47 @@
+#praff-1{
+    background-image: url(/images/praff_menu/praf-menu-1.png);
+}#praff-2{
+    background-image: url(/images/praff_menu/praf-menu-2.png);
+}#praff-3{
+    background-image: url(/images/praff_menu/praf-menu-3.png);
+}#praff-4{
+    background-image: url(/images/praff_menu/praf-menu-4.png);
+}#praff-5{
+    background-image: url(/images/praff_menu/praf-menu-5.png);
+}#praff-6{
+    background-image: url(/images/praff_menu/praf-menu-6.png);
+}#praff-7{
+    background-image: url(/images/praff_menu/praf-menu-7.png);
+}#praff-8{
+    background-image: url(/images/praff_menu/praf-menu-8.png);
+}#praff-9{
+    background-image: url(/images/praff_menu/praf-menu-9.png);
+}#praff-10{
+    background-image: url(/images/praff_menu/praf-menu-10.png);
+}#praff-11{
+    background-image: url(/images/praff_menu/praf-menu-11.png);
+}
+/* MENU ITEM ANIMATION */
+.menu-choices:nth-child(1) {
+    animation-delay: 0.10s;
+}.menu-choices:nth-child(2) {
+    animation-delay: 0.15s;
+}.menu-choices:nth-child(3) {
+    animation-delay: 0.20s;
+}.menu-choices:nth-child(4) {
+    animation-delay: 0.25s;
+}.menu-choices:nth-child(5) {
+    animation-delay: .30s;
+}.menu-choices:nth-child(6) {
+    animation-delay: .35s;
+}.menu-choices:nth-child(7) {
+    animation-delay: .40s;
+}.menu-choices:nth-child(8) {
+    animation-delay: .45s;
+}.menu-choices:nth-child(9) {
+    animation-delay: .50s;
+}.menu-choices:nth-child(10) {
+    animation-delay: .55s;
+}.menu-choices:nth-child(11) {
+    animation-delay: .60s;
+}

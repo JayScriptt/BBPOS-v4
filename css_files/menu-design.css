@@ -1,0 +1,391 @@
+/* Hide scrollbars */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+body{
+background: rgb(255, 255, 255);
+    scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+h1{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+#logo{
+    position: absolute;
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    background-image: url(/images/logo/logobb.png);
+    height: 90px;
+    width: 110px;
+    background-size: cover;
+    opacity: 0;
+    animation: slideIn .20s ease-in-out forwards;
+}
+.menu-container{
+    height:150px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:50%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.menu-choices{
+    flex-grow: 0;
+    margin: 4px;
+    border: solid  hsl(0, 0%, 0%) 3px;
+    border-radius: 1px;
+    width: 35%;
+    height: 60px;
+    margin-bottom: 4%;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: slideIn .20s ease-in-out forwards;
+}
+.menu-choices p {
+    display: none;
+    position: relative;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: .5rem;
+    top: -15%;
+    padding: 1px;
+    width: 100%;
+    height:12px;
+}
+.menu-choices .price
+{
+    background-color: red;
+}
+.price {
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: 34px;
+}
+.action-btn-container{
+    width: 15%;
+    height: 50px;
+    margin-left: 80%;
+    position: absolute;
+    top:30%;
+    left: -80%;
+    position: fixed ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.action-btn{
+    border: solid black 3px;
+    background-color: #84f3ed;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.action-btn:nth-child(3){
+    background-color: hsl(0, 83%, 55%);
+}
+.action-btn:nth-child(3):hover{
+    background-color: hsl(0, 100%, 50%);
+    box-shadow: 0px 0px 10px hsl(0, 100%, 50%);
+    animation: .8s;
+}
+
+.action-btn:hover {
+    background-color: #45f1e9;
+    box-shadow: 0px 0px 10px #84f3ed;
+    animation: .8s;
+    border-radius: 10px;
+
+}
+.action-btn:active{
+    background-color: #b7eceb;
+    transform: scale(1.03);
+    animation: .8s;
+    border-radius: 10px;
+
+
+}
+.action-btn-container p {
+    font-size: .5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.summary-of-orders {
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    position: fixed;
+    height: 230px;
+    width: 25%;
+    top: 30%;
+    right: 2%;
+    border: solid black 3px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideIn .20s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+}
+.summary-of-orders-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+}
+.summary-of-orders h5 {
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.summary:nth-child(2) {
+    margin-top: auto; /* Pushes the second child to the bottom */
+    width: 100%;
+    border: solid black 1px;
+    font-size: .5rem;
+    text-align: center;
+    background-color: hsl(39, 44%, 75%);
+}
+.output-container {
+    height: 140px;
+    margin-top: -10px;
+    font-size:  .6rem;
+    padding: 3px;
+    background-color: #f9f9f9;
+    overflow-y: auto; 
+}
+
+
+/* LIST OF ORDERS OUTPUT STYLES */
+
+
+
+.output-item.highlighted {
+    background-color: lightblue; /* Blue background for highlighting */
+    border-color: blue; /* Optional: blue border */
+    color: #000;
+}
+
+.output-item {
+    display: flex;
+    align-items: center; /* Aligns the X button vertically */
+    justify-content: space-between; /* Ensures the text and button stay on the same line */
+    padding: 5px;
+    margin-bottom: .5px;
+    font-size: 7px;
+    cursor: pointer;
+    
+}
+
+.delete-btn {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    height: 13px;
+    width: 13px;
+    font-size: 8px;
+    margin-right: 1px;
+    display: flex;
+    align-items: center; /* Centers the "X" text vertically */
+    justify-content: center; /* Centers the "X" text horizontally */
+}
+/* ENDS HERE LIST OF ORDERS OUTPUT STYLES */
+.check-out {
+    position: fixed;
+    bottom: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 7%;
+    align-items: center;
+    border: solid black 1px;
+    font-size: .5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: hsl(42, 10%, 75%);
+}
+.check-out:hover {
+    background-color: hsl(43, 26%, 95%);
+    box-shadow: 0px 0px 10px hsl(43, 26%, 95%);
+    animation: .8s;
+}
+.check-out:active {
+    background-color: hsl(231, 85%, 61%);
+    box-shadow: 0px 0px 10px hsl(231, 85%, 61%);
+    transform: scale(1.03);
+    animation: .8s;
+}
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(250px);
+        opacity: 0;
+    }to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (min-width: 768px) {
+    h1{
+        margin-top: 5%;
+        font-size: 3.5rem;
+    }
+    #logo{
+        height: 140px;
+        width: 180px;
+    }
+    .action-btn-container{
+        height: 400px;
+        width: 15%;
+    }
+    .action-btn{
+        height: 50px;
+    }
+    .action-btn p {
+        font-size: 1rem;
+    }
+    .menu-choices{
+        height: 125px;
+    }
+    .menu-choices p {
+        height: 25px;
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-left: -2%;
+        margin-bottom: 77px;
+    }
+    .summary-of-orders{
+        height: 500px;
+    }
+    .summary-of-orders p {
+        font-size: 1.5rem;
+    }
+    #list {
+    font-size: 1rem;
+    margin: 0; 
+    }
+    .output-container {
+    height: 380px;
+}
+    .output-item {
+    font-size: 12px;
+}
+    .summary-of-orders h5 {
+    font-size: 1.3rem;
+}
+    .check-out {
+    font-size: .8rem;
+}
+}
+@media (min-width: 1024px) {
+    h1{
+        margin-top: 5%;
+        font-size: 4.5rem;
+    }
+    #logo{
+        height: 180px;
+        width: 230px;
+    }
+    .action-btn-container{
+        height: 350px;
+        width: 13%;
+        top: 25%;
+    }
+    .action-btn{
+        height: 70px;
+    }
+    .action-btn p {
+        font-size: 1.3rem;
+    }
+    .menu-container{
+        height: 400px;
+        width: 55%;
+    }
+    .menu-choices{
+        height: 125px;
+        width: 20%;
+    }
+    .menu-choices p {
+        height: 20px;
+        font-size: .9rem;
+        margin-top: 15px;
+        margin-bottom: 87px;
+        width: 103%;
+    }
+    .summary-of-orders{
+        height: 500px;
+        width: 20%;
+        margin-top: -5%;
+    }
+    .summary-of-orders p {
+        font-size: 1.5rem;
+    }
+    .output-item {
+        font-size: 15px;
+    }
+}@media (min-width: 1440px) {
+    h1{
+        margin-top: 5%;
+        font-size: 6.5rem;
+    }
+    #logo{
+        height: 250px;
+        width: 320px;
+    }
+    .menu-container{
+        width: 60%;
+        margin-left: 15%;
+    }
+    .menu-choices{
+        height: 165px;
+        width: 24%;
+    }
+    .menu-choices p {
+        height: 25px;
+        font-size: 1.5rem;
+        margin-top: 26px;
+        padding: 1px;   
+        margin-left: 0%;
+        margin-bottom: 113px;
+    }
+
+    .summary-of-orders{
+        height: 700px;
+        width: 23%;
+        margin-top: -5%;
+    }
+    .summary-of-orders p {
+        font-size: 2.5rem;
+    }
+    .summary-of-orders ul {
+        font-size: 1.4rem;
+    }
+    #list {
+        font-size: 1.5rem;
+        margin: 0; 
+    }
+}
+
+
+
+
+
