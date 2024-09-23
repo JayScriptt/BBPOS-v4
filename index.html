@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="login_container" id="loginContainer">
+      <div class="glass_polimorphism">
+        <div class="logo"></div>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="logo"></div>
+            <input type="text" id="username" placeholder="Username" required>
+            <div class="password_container">
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="checkbox" id="showPassword" class="password_toggle">
+                <label for="showPassword" class="toggle_label"></label>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error_message" style="color: red; display: none;">Incorrect username or password</p>
+        </form>
+      </div>
+    </div>
+    <script src="/js_files/script.js"></script>
+</body>
+</html>
