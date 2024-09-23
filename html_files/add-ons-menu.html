@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD-ONS Menu</title>
+    <link rel="stylesheet" href="/css_files/menu-design.css">
+</head>
+<body>
+    <h1>ADD ONS</h1>
+
+    <!-- Menu choices -->
+    <div class="menu-container">
+        <div class="menu-choices" id="modify_btn1"><p>No Ice</p></div>
+        <div class="menu-choices" id="modify_btn2"><p>More Ice</p></div>
+        <div class="menu-choices" id="modify_btn3"><p>SUGAR LVL 25%</p></div>
+        <div class="menu-choices" id="modify_btn3"><p>SUGAR LVL 50%</p></div>
+        <div class="menu-choices" id="modify_btn3"><p>SUGAR LVL 75%</p></div>
+        <div class="menu-choices" id="modify_btn3"><p>SUGAR LVL 100%</p></div>
+
+      
+    </div>
+
+    <!-- Action buttons -->
+    <div class="action-btn-container">
+        <div class="action-btn" id="void-btn"><p>VOID</p></div>
+        <div class="action-btn" id="add-ons-btn"><p>ADD-ONS</p></div>
+        <div class="action-btn" id="modify-btn" onclick="location.href='modify-menu.html'"><p>MODIFY</p></div>
+        <div class="action-btn" id="return-btn" onclick="goBack()"><p>RETURN</p></div>
+    </div>
+
+    <!-- Summary of orders -->
+    <div class="summary-of-orders">
+        <p>List of Orders</p> <br> 
+        <b><div id="list"></div></b>
+    </div>
+
+    <!-- Logo -->
+    <div id="logo"></div>
+
+    
+    <!-- Script -->
+    <script src="/js_files/menu.js"></script>
+    <script src="/js_files/script.js"></script>
+
+
+</body>
+</html>

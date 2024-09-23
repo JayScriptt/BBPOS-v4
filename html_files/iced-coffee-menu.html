@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iced Coffee Menu</title>
+    <link rel="stylesheet" href="/css_files/iced-coffee-menu.css">
+    <link rel="stylesheet" href="/css_files/menu-design.css">
+</head>
+<body>
+    <h1>Iced Coffee Menu</h1>
+    <div class="menu-container">
+        <div class="menu-choices" id="iced-coffee-1" ><p>Karamel</p><p class="price">₱ 29</p></div>
+        <div class="menu-choices" id="iced-coffee-2" ><p>Brusko</p><p class="price">₱ 29</p></div>
+        <div class="menu-choices" id="iced-coffee-3" ><p>Vanilla</p><p class="price">₱ 29</p></div>
+        <div class="menu-choices" id="iced-coffee-4" ><p>Matcch</p><p class="price">₱ 29</p></div>
+        <div class="menu-choices" id="iced-coffee-5" ><p>Mocha</p><p class="price">₱ 29</p></div>
+    </div>
+    <div class="action-btn-container">
+        <div class="action-btn" id="toggle-btn"><p>M</p></div>
+        <div class="action-btn" id="toggle-btn-price"><p>PRICE : OFF</p></div>
+        <div class="action-btn" id="void-btn"><p>VOID</p></div>
+        <div class="action-btn" id="add-ons-btn" onclick="location.href='add-ons-menu.html'"><p>ADD-ONS</p></div>
+        <div class="action-btn" id="modify-btn" onclick="location.href='modify-menu.html'"><p>MODIFY</p></div>
+        <div class="action-btn" id="return-btn" onclick="location.href='main-menu.html'"><p>RETURN</p></div>
+    </div>
+        <!-- LOGO -->
+        <div id="logo"></div>
+
+        <!-- SUMMARY OF ORDERS -->
+        <div class="summary-of-orders">
+            <h5>List of Orders</h5>
+            <b><div class="output-container" id="outputContainer"></div> </b>
+                <button class="check-out">CHECKOUT</button>
+           
+    </div>
+
+  <script src="/js_files/menu.js"></script>
+
+</body>
+</html>
