@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    background: rgb(22,12,2);
+    background: linear-gradient(90deg, rgba(22,12,2,1) 0%, rgba(255,128,0,1) 100%);
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-overflow-scrolling: touch;
+    display: flex; /* Center content */
+    align-items: center;
+    justify-content: center;
+    }
+
+.glass_polimorphism {
+    margin-top: 60%;
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(59, 49, 49, 0.842); /* Semi-transparent background */
+    height: 300px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width/height */
+    position: relative; /* Position logo correctly */
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(/images/logo/logobb.png);
+    height: 70px;
+    width: 90px;
+    filter: drop-shadow(0px 0px .5px hsl(0deg 0% 96.44%));
+    background-size: cover;
+}
+
+.password_container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.password_container input[type="password"] {
+    width: 100%; 
+}
+
+.password_toggle {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 70px;
+}
+
+
+.login_container h2 {
+    margin-top: 20%;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.login_container input {
+    width: 100%; 
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.login_container button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login_container button:hover {
+    background-color: #0056b3;
+}
+@media (min-width: 1024px) {
+    .logo {
+    height: 70px;
+    width: 90px;
+    }
+glass_polimorphism {
+    margin-top: 60%;
+    height: 700px;
+    width: 20%;
+    }
+}
